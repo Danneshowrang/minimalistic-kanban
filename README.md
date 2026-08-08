@@ -1,15 +1,15 @@
-# Kanbanlite
+# Riverbed
 
 Minimalist kanban board. Create a board, get a shareable code, add tasks with tags, urgency, assignees, and subtasks.
 
 ## Run locally
 
-npm install
-npm run dev
+    npm install
+    npm run dev
 
 ## Build for production
 
-npm run build
+    npm run build
 
 Output goes to `dist/`.
 
@@ -21,16 +21,16 @@ Deployed on Netlify. Base directory: `riverbed`, build command: `npm run build`,
 
 - React + Vite
 - React Router (HashRouter)
-- localStorage for persistence — boards are local to the browser they were created in, not synced across devices
+- localStorage for persistence. Boards are local to the browser that created them.
 
 ## Project structure
 
-src/
-  components/    Card.jsx, TaskModal.jsx
-  pages/         Home.jsx, Board.jsx
-  lib/           storage.js — all board/task persistence logic
-  styles.css
+    src/
+      components/    Card.jsx, TaskModal.jsx
+      pages/         Home.jsx, Board.jsx
+      lib/           storage.js (all board/task persistence logic)
+      styles.css
 
 ## Known limitation
 
-Board codes only work on the same browser/device that created them (no backend yet).
+Board codes only work on the same browser/device that created them. No backend yet.
